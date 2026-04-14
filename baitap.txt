@@ -1,0 +1,94 @@
+ //quan ly nhieu Car
+    private Car[] arr=new Car[IConstant.MAX];
+    private int count=0;
+        
+    public void InputCars(){
+        System.out.println("ban muon ytao bao nhieu chiec xe:");
+        int n=Inputer.inputNumber(1, IConstant.MAX);
+        do{
+            /*
+              Car a=new Car();
+              a.input();
+              arr[count]=a;
+              count++;
+            */
+        }while(count<=n);
+    }
+    public void displayCars(){
+        for (Car car : arr) {
+            //to do
+        }
+    }
+    //ham nay de dem so car trong arr dua vao ten brand
+    //input: ten brand can thong ke
+    //output: so xe trung brand do
+    public int countCarsByBrand(String brand){
+        int result=0;
+        //to do
+        return result;
+    }
+    //hay dem so xe cung nam san xuat
+    //input: year can dem
+    //out: so xe theo input
+    public int countCarsByYear(int year){
+        return -1;
+    }
+    //ham nay de xuat car xe theo brand
+    public void displayCarsByBrand(String brand){
+        for (Car c : arr) {
+            if(c==null) break;
+            else{
+                if(c.getBrand().equalsIgnoreCase(brand)){
+                    c.display();
+                }
+            }
+        }
+    }
+    //ham nay de xuat cac xe theo engine's type
+    public void displayCarsByType(String type){
+        //todo
+    }
+    //ham nay de tra ve array chua cac xe co brand can tim
+    //input: brand 
+    //output: array of cars
+    public Car[] getCarsByBrand(String brand){
+        Car[] result=new Car[count];
+        int n=0;
+        //to do
+       
+        return result;
+    }
+    //ham nay de tim cac xe theo nam san xuat
+    public Car[] getCarsByYear(int year){
+       return null;
+    }
+    //ham nay de lay cac xe co power between low and high
+    public Car[] getCarsByPower(int low, int high){
+        return null;
+    }        
+    // ham nay de in ra cac xe theo format sau:
+    /*
+    BAND:  MEC
+       YEAR: 2025
+          MODEL    TYPE      POWER
+           E300    electric    3
+           C250    hyreid      2
+       YEAR:2026
+           MODEL    TYPE      POWER
+           E400    electric    3
+           C250    electric      2
+       
+    */
+    public void statistic(String brand){
+        //to do
+    }
+    //ham nay dem so xe tren each brand
+    /*
+    BRAND  NUMBER of CARS
+    MEC:    3
+    LX:     2
+    Honda:  12
+    */
+    public void statictisCarsByBrand(){
+        //to do
+    }

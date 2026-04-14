@@ -1,0 +1,4 @@
+luxus,LX123,2024-hyrid,2
+a,abc,2023-abc,2
+b,b,2001-b,2
+honda,city,2025-electric,1
